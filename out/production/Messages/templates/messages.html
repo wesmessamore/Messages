@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login to HelloSpark</title>
+</head>
+<body>
+<form action="/create-message" method="post">
+    <input type="text" placeholder="Enter your message" name="message" />
+    <button type ="submit">Enter</button>
+</form>
+</br>
+Messages
+<ol>
+    {{#messages}}
+    <li>{{.}}</li>
+{{/messages}}
+</ol>
+</body>
+</html>
